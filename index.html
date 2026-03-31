@@ -8,7 +8,7 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      background: #111;
+      background: #fff;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
@@ -73,13 +73,13 @@
 </head>
 <body>
 
-  <div class="card" id="Table10.png"><img src="Table10.png" alt="" loading="lazy"></div>
-  <div class="card" id="Figure4.png"><img src="Figure4.png" alt="" loading="lazy"></div>
-  <div class="card" id="Figure6.png"><img src="Figure6.png" alt="" loading="lazy"></div>
-  <div class="card" id="Table2.png"><img src="Table2.png" alt="" loading="lazy"></div>
-  <div class="card" id="Figure5.png"><img src="Figure5.png" alt="" loading="lazy"></div>
-  <div class="card" id="Figure7.png"><img src="Figure7.png" alt="" loading="lazy"></div>
-  <div class="card" id="Figure8.png"><img src="Figure8.png" alt="" loading="lazy"></div>
+  <div class="card" id="T10.png"><img src="T10.png" alt="" loading="lazy"></div>
+  <div class="card" id="F4.png"><img src="F4.png" alt="" loading="lazy"></div>
+  <div class="card" id="F6.png"><img src="F6.png" alt="" loading="lazy"></div>
+  <div class="card" id="T2.png"><img src="T2.png" alt="" loading="lazy"></div>
+  <div class="card" id="F5.png"><img src="F5.png" alt="" loading="lazy"></div>
+  <div class="card" id="F7.png"><img src="F7.png" alt="" loading="lazy"></div>
+  <div class="card" id="F8.png"><img src="F8.png" alt="" loading="lazy"></div>
 
 <div id="lightbox">
   <button id="lb-close">✕</button>
@@ -97,7 +97,7 @@
 
   const cards = [...document.querySelectorAll('.card img')];
 
-  // 根据 URL hash 滚动到对应图片，如 #Figure4.png
+  // 根据 URL hash 滚动到对应图片，如 #F4.png
   function scrollToHash(delay = 0) {
     const id = decodeURIComponent(location.hash.slice(1));
     if (!id) return;
